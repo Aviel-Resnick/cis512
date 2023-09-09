@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="CIS-512 Weather App">
+    <meta name="author" content="Aviel Resnick">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css    ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- <img src="resources/images/blue_sky.jpg" class="bg-image"> -->
+        <div class="current">
+          <div class="phone-top">
+            <div class="time">
+              1:56 PM
+            </div>
+            <!-- <div class="settings">
+              <img alt="" src="./resources/images/gear.png" style="width: 25px; height: 25x;"/>
+            </div> -->
+          </div>
+          <div id="location">
+            Philadelphia
+          </div>
+          <div id="current-temperature">
+            82°
+          </div>
+          <div class="feels">
+            Feels Like: 84°
+          </div>
+          <div id="high-low">
+            <div id="high">
+              H: 85°
+            </div>
+            <div id="low">
+              L: 75°
+            </div>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week-header">
+            <div id="week-header-monday">
+              Mon
+            </div>
+            <div id="week-header-tuesday">
+              Tue
+            </div>
+            <div id="week-header-wednesday">
+              Wed
+            </div>
+            <!-- <i class="fa-solid fa-arrow-right" style="color: white; font-size: xx-small; "></i> -->
+          </div>
+          <div class="week-body">
+            <!-- <div id="week-monday">
+              H: 89° <br>
+              L: 75°
+            </div>
+            <div id="week-tuesday">
+              H: 89° <br>
+              L: 75°
+            </div>
+            <div id="week-wednesday">
+              H: 89° <br>
+              L: 75°
+            </div> -->
+            <div class="hour-weather" id="week-monday">
+              H: 85° <br> L: 75°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div>
+            </div>
+            <div class="hour-weather" id="week-monday">
+              H: 83° <br> L: 71°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div>
+            </div>
+            <div class="hour-weather" id="week-monday">
+              H: 84° <br> L: 74°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="current-time"></div>
+        <div class="day">
+          <div class="sidebar">
+            <div class="hour" id="eleven">
+              11 AM
+            </div>
+            <div class="hour">
+              12 PM
+            </div>
+            <div class="hour">
+              1 PM
+            </div>
+            <div class="hour">
+              2 PM
+            </div>
+            <div class="hour">
+              3 PM
+            </div>
+            <div class="hour">
+              4 PM
+            </div>
+          </div>
+
+          <div class="hourly-weather">
+            <div class="hour-weather" id="eleven-weather">
+              82°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div>
+            </div>
+            <div class="hour-weather">
+              83°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div>
+            </div>
+            <div class="hour-weather">
+              83°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div>
+            </div>
+            <div class="hour-weather">
+              85°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div>
+            </div>
+            <div class="hour-weather">
+              84°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div>
+            </div>
+            <div class="hour-weather" id="last-weather">
+              <!-- 83°
+              <div class="sun">
+                <img alt="" src="./resources/images/sun.png" style="width: 50px; height: 50px;"/>
+              </div> -->
+            </div>
+          </div>
+          
+          <div class="events">
+            <div class="event" id="first-event">
+              <div class="event-time">
+                11:00 AM - 12:30 PM
+              </div>
+
+              <div class="event-title">
+                LGST 2420
+              </div>
+
+              <div class="event-location">
+                Huntsman Hall, <br> 3730 Walnut St, Philadelphia, PA 19104
+              </div>
+            </div>
+            <div class="event" id="second-event">
+              <div class="event-time">
+                1:30 PM - 2:30 PM
+              </div>
+
+              <div class="event-title">
+                CIS 5800
+              </div>
+
+              <div class="event-location">
+                Claire M. Fagin Hall, <br> 418 Curie Blvd, Philadelphia, PA 19104
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
